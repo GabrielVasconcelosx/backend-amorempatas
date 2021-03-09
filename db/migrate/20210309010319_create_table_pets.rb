@@ -8,7 +8,7 @@ class CreateTablePets < ActiveRecord::Migration[5.2]
       t.string :size
       t.string :color
       t.boolean :vaccination
-      t.bolean :castration
+      t.boolean :castration
       t.string :description
       t.boolean :is_adopted
     end
