@@ -4,7 +4,7 @@ class CreateTablePets < ActiveRecord::Migration[5.2]
       t.index :id
       t.string :name
       t.integer :age
-      t.string :type
+      t.string :tipo
       t.string :size
       t.string :color
       t.boolean :vaccination
