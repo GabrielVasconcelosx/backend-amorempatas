@@ -7,8 +7,8 @@ class PetsController < ApplicationController
     @pet = Pet.all
   end
 
-  # GET /widgets/1
-  # GET /widgets/1.json
+  # GET /pets/1
+  # GET /pets/1.json
   def show
   end
 
