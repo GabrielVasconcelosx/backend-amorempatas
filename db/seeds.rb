@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+dog = Pet.new({ name: 'Pedro', age: 2, color: '#000', description: 'Doguinho lindo', animal_type: 'dog', vaccination: true, castration: true, is_adopted: true })
+dog.save!
