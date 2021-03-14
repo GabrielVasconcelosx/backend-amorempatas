@@ -8,3 +8,6 @@
 
 dog = Pet.new({ name: 'Pedro', age: 2, color: '#000', description: 'Doguinho lindo', animal_type: 'dog', vaccination: true, castration: true, is_adopted: true })
 dog.save!
+
+cat = Pet.new({ name: 'Nilce', age: 2, color: '#000', description: 'Gatinho lindo', animal_type: 'cat', vaccination: true, castration: true, is_adopted: true })
+cat.save!

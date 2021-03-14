@@ -4,7 +4,12 @@ class PetsController < ApplicationController
   # GET /pets
   # GET /pets.json
   def index
-    @pets = Pet.all
+    limit = (params[:limit] || 10).to_i
+    page = (params[:page] || 1).to_i
+    offset = limit * (page - 1);
+
+    @pets = Pet.order(created_at: :desc).limit(limit).offset(offset)
+
     render json: @pets
   end
 

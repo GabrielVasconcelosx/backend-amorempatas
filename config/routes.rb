@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :pets, defaults: {format: :json}
-  root 'welcome#index'
+  resources :application, defaults: {format: :json}
+  root 'application#status'
+
+  resources :pets do
+  end
 end
